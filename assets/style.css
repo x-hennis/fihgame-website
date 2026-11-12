@@ -255,9 +255,12 @@ span.jelly { cursor: var(--cur-arrow); }
 .school { margin-top: clamp(40px, 7vh, 72px); overflow: hidden; padding: 8px 0;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
 .school__row { display: flex; }
-.school__run { display: flex; gap: 26px; width: max-content; padding-right: 26px; animation: swim 70s linear infinite reverse; }
+/* the row holds its fish twice and moves by exactly one copy, so it runs on without a jump: it
+   must keep its full width for that (flex: none; squeezed to the page's width it moved by half
+   the page and jumped back, the owner saw it "reset") */
+.school__run { flex: none; display: flex; gap: 26px; width: max-content; padding-right: 26px; animation: swim 120s linear infinite reverse; }
 .school__row--back { margin-top: 6px; }
-.school__row--back .school__run { animation-direction: normal; animation-duration: 84s; }
+.school__row--back .school__run { animation-direction: normal; animation-duration: 140s; }
 .school__run img { width: 112px; height: 112px; animation: bob 3.8s ease-in-out infinite; filter: drop-shadow(0 6px 6px rgba(7,26,43,.25)); }
 .school__run img:nth-child(3n) { animation-delay: -1.3s; }
 .school__run img:nth-child(3n+1) { animation-delay: -2.6s; }
