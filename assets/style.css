@@ -29,6 +29,15 @@
   --wide: 1180px;
   --panel: #f3ecdd url("ui/linen.webp") 0 0 / 440px 320px;   /* the game's linen glass */
 }
+/* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
+   everything that can be clicked; the same size and hot spots as in the game */
+:root { --cur-arrow: url("ui/cursors/arrow.png") 11 4, auto; --cur-point: url("ui/cursors/point.png") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png") 1x, url("b.png") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png") 1x, url("ui/cursors/arrow@2x.png") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png") 1x, url("ui/cursors/point@2x.png") 2x) 15 3, pointer; }
+}
+html { cursor: var(--cur-arrow); }
+a, button, summary, [role="button"] { cursor: var(--cur-point); }
 html:lang(ru) { --display: "Fredoka", "Nunito", system-ui, sans-serif; }
 html:lang(ja) { --display: "Fredoka", "Noto JP", system-ui, sans-serif; --body: "Inter", "Noto JP", system-ui, sans-serif; }
 html:lang(ko) { --display: "Fredoka", "Noto KR", system-ui, sans-serif; --body: "Inter", "Noto KR", system-ui, sans-serif; }
@@ -124,7 +133,7 @@ body.scrolled::before { opacity: .92; }
 .bar__nav a:hover { background: rgba(31,181,194,.18); }
 
 /* the reef's music: off until it is clicked (a browser plays no sound before a click) */
-.music { flex: none; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; margin-left: 6px; border-radius: 50%; cursor: pointer; color: var(--ink);
+.music { flex: none; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; margin-left: 6px; border-radius: 50%; cursor: var(--cur-point); color: var(--ink);
   background: #fff; border: 2px solid #cfe7ec; box-shadow: 0 2px 0 #b9d8df; transition: transform .15s, background .15s; }
 .music:hover { background: #eefbfd; transform: translateY(-1px); }
 .music svg { margin-left: -2px; opacity: .55; transition: opacity .15s; }
@@ -133,7 +142,7 @@ body.scrolled::before { opacity: .92; }
 
 /* the language menu */
 .lang { font-family: "Fredoka", system-ui, sans-serif; }
-.lang summary { list-style: none; display: flex; align-items: center; gap: 9px; cursor: pointer; font-weight: 600; font-size: 1rem; line-height: 1.2; padding: 7px 14px 7px 16px; border-radius: 999px;
+.lang summary { list-style: none; display: flex; align-items: center; gap: 9px; cursor: var(--cur-point); font-weight: 600; font-size: 1rem; line-height: 1.2; padding: 7px 14px 7px 16px; border-radius: 999px;
   background: #fff; border: 2px solid #cfe7ec; box-shadow: 0 2px 0 #b9d8df; -webkit-user-select: none; user-select: none; white-space: nowrap; }
 .lang summary::-webkit-details-marker { display: none; }
 .lang summary::after { content: ""; width: 7px; height: 7px; margin-top: -4px; border-right: 2.5px solid var(--ink); border-bottom: 2.5px solid var(--ink); border-radius: 1px; transform: rotate(45deg); transition: transform .15s; }
@@ -148,7 +157,7 @@ body.scrolled::before { opacity: .92; }
 /* ---------- the jelly button: the owner's "aqua jelly" CSS (the same the game's button pictures are
    rendered from), drawn at its own size (122 px high) and shown at half of it ---------- */
 .jelly { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; zoom: .5;
-  height: 122px; min-width: 310px; padding: 0 66px; border: 0; border-radius: 500px; background: none; cursor: pointer;
+  height: 122px; min-width: 310px; padding: 0 66px; border: 0; border-radius: 500px; background: none; cursor: var(--cur-point);
   font: 600 41px/1 var(--display); letter-spacing: .01em; color: #fff; text-decoration: none; white-space: nowrap;
   -webkit-tap-highlight-color: transparent; transition: transform 160ms ease; }
 .jelly__plate { --rim: 10px; position: absolute; z-index: -1; inset: 0; border-radius: 500px; border: 1.5px solid #b9e3eb;
@@ -183,7 +192,7 @@ body.scrolled::before { opacity: .92; }
 a.jelly:hover, button.jelly:hover { transform: translateY(-3px); }
 a.jelly:active, button.jelly:active { transform: translateY(3px) scale(.985); }
 a.jelly:active .jelly__plate, button.jelly:active .jelly__plate { box-shadow: 0 1px 0 #add4dd, 0 4px 7px #4d8b9828, inset 3px 4px 3px #fff, inset -4px -5px 6px #c9dfe6; }
-span.jelly { cursor: default; }
+span.jelly { cursor: var(--cur-arrow); }
 .jelly:focus-visible { outline: 6px solid #fff; outline-offset: 8px; box-shadow: 0 0 0 20px #0b4f9a; }
 
 /* ---------- little pills with facts ---------- */
@@ -288,7 +297,7 @@ span.jelly { cursor: default; }
 .lightbox[open] { display: flex; }
 .lightbox::backdrop { background: rgba(4,14,32,.88); }
 .lightbox img { max-width: min(94vw, 1600px); max-height: 88vh; border-radius: 14px; border: 4px solid var(--cream); box-shadow: 0 30px 60px rgba(0,0,0,.5); }
-.lightbox button { position: fixed; width: 54px; height: 54px; border-radius: 50%; border: 3px solid #fff; background: var(--cream); color: var(--ink); cursor: pointer;
+.lightbox button { position: fixed; width: 54px; height: 54px; border-radius: 50%; border: 3px solid #fff; background: var(--cream); color: var(--ink); cursor: var(--cur-point);
   font: 700 1.5rem/1 var(--display); box-shadow: 0 4px 0 rgba(7,26,43,.25); }
 .lightbox button:hover { background: #fff; }
 .lightbox__close { top: 18px; right: 18px; }
