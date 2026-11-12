@@ -4,15 +4,15 @@
    page (main.js fades through the game's ten depth zones). Phones first: most visitors come
    on one. */
 
-@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=c0682cc4a2") format("woff2"); font-weight: 300 700; font-display: swap; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=60c669d68f") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=60c669d68f") format("woff2"); font-weight: 100 900; font-display: swap; }
 /* the game's own fallbacks: Cyrillic (Nunito in titles, Inter in text), Japanese, Korean, Chinese
    (Noto Sans, cut down to the characters the page uses) */
-@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=c0682cc4a2") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=60c669d68f") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=60c669d68f") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=60c669d68f") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=60c669d68f") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=60c669d68f") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
   --ink: #071a2b;
@@ -27,14 +27,14 @@
   --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --wide: 1180px;
-  --panel: #f3ecdd url("ui/linen.webp?v=c0682cc4a2") 0 0 / 440px 320px;   /* the game's linen glass */
+  --panel: #f3ecdd url("ui/linen.webp?v=60c669d68f") 0 0 / 440px 320px;   /* the game's linen glass */
 }
 /* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
    everything that can be clicked; the same size and hot spots as in the game */
-:root { --cur-arrow: url("ui/cursors/arrow.png?v=c0682cc4a2") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=c0682cc4a2") 15 3, pointer; }
-@supports (cursor: image-set(url("a.png?v=c0682cc4a2") 1x, url("b.png?v=c0682cc4a2") 2x) 0 0, auto) {
-  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=c0682cc4a2") 1x, url("ui/cursors/arrow@2x.png?v=c0682cc4a2") 2x) 11 4, auto;
-          --cur-point: image-set(url("ui/cursors/point.png?v=c0682cc4a2") 1x, url("ui/cursors/point@2x.png?v=c0682cc4a2") 2x) 15 3, pointer; }
+:root { --cur-arrow: url("ui/cursors/arrow.png?v=60c669d68f") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=60c669d68f") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png?v=60c669d68f") 1x, url("b.png?v=60c669d68f") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=60c669d68f") 1x, url("ui/cursors/arrow@2x.png?v=60c669d68f") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png?v=60c669d68f") 1x, url("ui/cursors/point@2x.png?v=60c669d68f") 2x) 15 3, pointer; }
 }
 html { cursor: var(--cur-arrow); }
 a, button, summary, [role="button"] { cursor: var(--cur-point); }
@@ -96,12 +96,12 @@ p { margin: 0 0 1em; }
 /* where two pieces lie over each other one fades out as the other fades in, and the two are
    added up (plus-lighter): wood, shadow and linen stay exactly as strong as in one piece */
 .wood i + i { mix-blend-mode: plus-lighter; }
-.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=c0682cc4a2"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
+.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=60c669d68f"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
 .wood--bar i:nth-child(1) { right: 0; left: calc(50% - 30px); background-position: right top;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 60px); mask-image: linear-gradient(90deg, transparent, #000 60px); }
 .wood--bar i:nth-child(2) { left: 0; right: calc(50% - 30px); background-position: left top;
   -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); }
-.wood--panel i { background-image: url("ui/wood_panel.webp?v=c0682cc4a2"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
+.wood--panel i { background-image: url("ui/wood_panel.webp?v=60c669d68f"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
 .wood--panel i:nth-child(1) { right: 0; bottom: 0; left: calc(50% - 40px); top: calc(50% - 40px); background-position: right bottom;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px);
   mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px); }
@@ -339,6 +339,10 @@ span.jelly { cursor: var(--cur-arrow); }
 /* ---------- text pages (imprint, privacy, terms) ---------- */
 .doc { max-width: 860px; margin: 150px auto 40px; padding: clamp(24px, 5vw, 52px); width: calc(100% - 32px); }
 .doc h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 18px; }
+/* Japanese, Korean and Chinese legal texts use the device's own fonts: the site's fonts for these
+   languages hold only the characters of the other pages */
+html:lang(ja) .doc, html:lang(ko) .doc, html:lang(zh-Hans) .doc,
+html:lang(ja) .doc :is(h1, h2, h3, th), html:lang(ko) .doc :is(h1, h2, h3, th), html:lang(zh-Hans) .doc :is(h1, h2, h3, th) { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 .doc h2 { font-size: 1.45rem; font-weight: 600; margin: 1.9em 0 .6em; }
 .doc h3 { font-size: 1.15rem; font-weight: 600; margin: 1.5em 0 .5em; }
 .doc ul { padding-left: 1.3em; margin: 0 0 1em; }
