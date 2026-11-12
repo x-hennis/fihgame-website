@@ -4,15 +4,15 @@
    page (main.js fades through the game's ten depth zones). Phones first: most visitors come
    on one. */
 
-@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=c0682cc4a2") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
 /* the game's own fallbacks: Cyrillic (Nunito in titles, Inter in text), Japanese, Korean, Chinese
    (Noto Sans, cut down to the characters the page uses) */
-@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=c0682cc4a2") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=c0682cc4a2") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
   --ink: #071a2b;
@@ -27,14 +27,14 @@
   --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --wide: 1180px;
-  --panel: #f3ecdd url("ui/linen.webp") 0 0 / 440px 320px;   /* the game's linen glass */
+  --panel: #f3ecdd url("ui/linen.webp?v=c0682cc4a2") 0 0 / 440px 320px;   /* the game's linen glass */
 }
 /* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
    everything that can be clicked; the same size and hot spots as in the game */
-:root { --cur-arrow: url("ui/cursors/arrow.png") 11 4, auto; --cur-point: url("ui/cursors/point.png") 15 3, pointer; }
-@supports (cursor: image-set(url("a.png") 1x, url("b.png") 2x) 0 0, auto) {
-  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png") 1x, url("ui/cursors/arrow@2x.png") 2x) 11 4, auto;
-          --cur-point: image-set(url("ui/cursors/point.png") 1x, url("ui/cursors/point@2x.png") 2x) 15 3, pointer; }
+:root { --cur-arrow: url("ui/cursors/arrow.png?v=c0682cc4a2") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=c0682cc4a2") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png?v=c0682cc4a2") 1x, url("b.png?v=c0682cc4a2") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=c0682cc4a2") 1x, url("ui/cursors/arrow@2x.png?v=c0682cc4a2") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png?v=c0682cc4a2") 1x, url("ui/cursors/point@2x.png?v=c0682cc4a2") 2x) 15 3, pointer; }
 }
 html { cursor: var(--cur-arrow); }
 a, button, summary, [role="button"] { cursor: var(--cur-point); }
@@ -96,12 +96,12 @@ p { margin: 0 0 1em; }
 /* where two pieces lie over each other one fades out as the other fades in, and the two are
    added up (plus-lighter): wood, shadow and linen stay exactly as strong as in one piece */
 .wood i + i { mix-blend-mode: plus-lighter; }
-.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
+.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=c0682cc4a2"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
 .wood--bar i:nth-child(1) { right: 0; left: calc(50% - 30px); background-position: right top;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 60px); mask-image: linear-gradient(90deg, transparent, #000 60px); }
 .wood--bar i:nth-child(2) { left: 0; right: calc(50% - 30px); background-position: left top;
   -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); }
-.wood--panel i { background-image: url("ui/wood_panel.webp"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
+.wood--panel i { background-image: url("ui/wood_panel.webp?v=c0682cc4a2"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
 .wood--panel i:nth-child(1) { right: 0; bottom: 0; left: calc(50% - 40px); top: calc(50% - 40px); background-position: right bottom;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px);
   mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px); }
@@ -145,12 +145,14 @@ body.scrolled::before { opacity: .92; }
 .lang summary { list-style: none; display: flex; align-items: center; gap: 9px; cursor: var(--cur-point); font-weight: 600; font-size: 1rem; line-height: 1.2; padding: 7px 14px 7px 16px; border-radius: 999px;
   background: #fff; border: 2px solid #cfe7ec; box-shadow: 0 2px 0 #b9d8df; -webkit-user-select: none; user-select: none; white-space: nowrap; }
 .lang summary::-webkit-details-marker { display: none; }
+.flag { flex: none; width: 24px; height: 16px; border-radius: 4px; box-shadow: 0 0 0 1.5px rgba(7,26,43,.16); }
+.lang a { display: flex; align-items: center; gap: 12px; }
 .lang summary::after { content: ""; width: 7px; height: 7px; margin-top: -4px; border-right: 2.5px solid var(--ink); border-bottom: 2.5px solid var(--ink); border-radius: 1px; transform: rotate(45deg); transition: transform .15s; }
 .lang[open] summary::after { transform: rotate(225deg); margin-top: 3px; }
 .lang summary:hover { background: #eefbfd; }
 .lang ul { position: absolute; right: 0; top: calc(100% + 22px); margin: 0; padding: 8px; list-style: none; min-width: 220px; max-height: calc(100vh - 150px); overflow-y: auto; border-radius: 18px;
   background: var(--panel); border: 3px solid rgba(255,255,255,.9); box-shadow: 0 6px 0 rgba(7,26,43,.10), 0 22px 40px rgba(7,26,43,.3); }
-.lang a { display: block; padding: 9px 14px; border-radius: 12px; text-decoration: none; font-weight: 500; font-size: 1.02rem; }
+.lang a { padding: 9px 14px; border-radius: 12px; text-decoration: none; font-weight: 500; font-size: 1.02rem; }
 .lang a:hover { background: rgba(31,181,194,.18); }
 .lang a[aria-current] { background: #d9f1f4; font-weight: 600; }
 
@@ -400,7 +402,8 @@ span.jelly { cursor: var(--cur-arrow); }
   .shot__frame { display: none; }
   .shot__frame--s { display: block; }
   .shot--tilt-l, .shot--tilt-r { transform: none; }
-  .lang summary { font-size: .95rem; padding: 6px 12px 6px 14px; }
+  .lang summary { font-size: .95rem; padding: 8px 12px 8px 12px; }
+  .lang__name { display: none; }   /* a phone shows the flag alone, the menu has the names */
   .music { width: 36px; height: 36px; }
   .bar { gap: 8px; }
   .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }

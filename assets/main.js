@@ -61,7 +61,7 @@
     var tall = window.matchMedia("(max-aspect-ratio: 4/5)").matches;
     var cut = tall ? "tall" : (window.innerWidth * (window.devicePixelRatio || 1) > 1500 ? "wide" : "wide_s");
     vid.muted = true;
-    vid.src = data.hero + cut + ".mp4";
+    vid.src = data.hero + cut + ".mp4?v=" + data.v;
     vid.addEventListener("playing", function () { vid.classList.add("on"); }, { once: true });
     var tryPlay = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
     tryPlay();
