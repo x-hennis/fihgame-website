@@ -4,15 +4,15 @@
    page (main.js fades through the game's ten depth zones). Phones first: most visitors come
    on one. */
 
-@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=93df2108d3") format("woff2"); font-weight: 300 700; font-display: swap; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=75f779aed0") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=75f779aed0") format("woff2"); font-weight: 100 900; font-display: swap; }
 /* the game's own fallbacks: Cyrillic (Nunito in titles, Inter in text), Japanese, Korean, Chinese
    (Noto Sans, cut down to the characters the page uses) */
-@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=93df2108d3") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=75f779aed0") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=75f779aed0") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=75f779aed0") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=75f779aed0") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=75f779aed0") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
   --ink: #071a2b;
@@ -27,14 +27,14 @@
   --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --wide: 1180px;
-  --panel: #f3ecdd url("ui/linen.webp?v=93df2108d3") 0 0 / 440px 320px;   /* the game's linen glass */
+  --panel: #f3ecdd url("ui/linen.webp?v=75f779aed0") 0 0 / 440px 320px;   /* the game's linen glass */
 }
 /* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
    everything that can be clicked; the same size and hot spots as in the game */
-:root { --cur-arrow: url("ui/cursors/arrow.png?v=93df2108d3") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=93df2108d3") 15 3, pointer; }
-@supports (cursor: image-set(url("a.png?v=93df2108d3") 1x, url("b.png?v=93df2108d3") 2x) 0 0, auto) {
-  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=93df2108d3") 1x, url("ui/cursors/arrow@2x.png?v=93df2108d3") 2x) 11 4, auto;
-          --cur-point: image-set(url("ui/cursors/point.png?v=93df2108d3") 1x, url("ui/cursors/point@2x.png?v=93df2108d3") 2x) 15 3, pointer; }
+:root { --cur-arrow: url("ui/cursors/arrow.png?v=75f779aed0") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=75f779aed0") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png?v=75f779aed0") 1x, url("b.png?v=75f779aed0") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=75f779aed0") 1x, url("ui/cursors/arrow@2x.png?v=75f779aed0") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png?v=75f779aed0") 1x, url("ui/cursors/point@2x.png?v=75f779aed0") 2x) 15 3, pointer; }
 }
 html { cursor: var(--cur-arrow); }
 a, button, summary, [role="button"] { cursor: var(--cur-point); }
@@ -96,12 +96,12 @@ p { margin: 0 0 1em; }
 /* where two pieces lie over each other one fades out as the other fades in, and the two are
    added up (plus-lighter): wood, shadow and linen stay exactly as strong as in one piece */
 .wood i + i { mix-blend-mode: plus-lighter; }
-.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=93df2108d3"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
+.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=75f779aed0"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
 .wood--bar i:nth-child(1) { right: 0; left: calc(50% - 30px); background-position: right top;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 60px); mask-image: linear-gradient(90deg, transparent, #000 60px); }
 .wood--bar i:nth-child(2) { left: 0; right: calc(50% - 30px); background-position: left top;
   -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); }
-.wood--panel i { background-image: url("ui/wood_panel.webp?v=93df2108d3"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
+.wood--panel i { background-image: url("ui/wood_panel.webp?v=75f779aed0"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
 .wood--panel i:nth-child(1) { right: 0; bottom: 0; left: calc(50% - 40px); top: calc(50% - 40px); background-position: right bottom;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px);
   mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px); }
@@ -260,6 +260,11 @@ span.jelly { cursor: var(--cur-arrow); }
 /* the icon stands beside the heading, on wide screens as on phones (owner, 2026-11-13) */
 .part__head { display: flex; align-items: center; gap: 18px; margin-bottom: 22px; }
 .part__head .badge { flex: none; margin-bottom: 0; }
+/* beside its icon a heading has less room: a little smaller, so that it never runs to four lines
+   (owner, 2026-11-13: a German heading had four on some screens) */
+.part__head .title { font-size: clamp(1.8rem, 3.3vw, 2.9rem); }
+.part__head .badge { width: 76px; height: 76px; }
+.part__head .badge img { width: 54px; height: 54px; }
 
 .school { margin-top: clamp(40px, 7vh, 72px); overflow: hidden; padding: 8px 0;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
@@ -401,8 +406,9 @@ html:lang(ja) .doc :is(h1, h2, h3, th), html:lang(ko) .doc :is(h1, h2, h3, th), 
   .part__head { order: 1; display: flex; align-items: center; gap: 14px; margin: 0; }
   .part__media { order: 2; padding: 12px 0 8px; }
   .part__text .card { order: 3; }
-  .badge { flex: none; width: 64px; height: 64px; margin: 0; border-width: 3px; }
-  .badge img { width: 44px; height: 44px; }
+  .part__head .badge, .badge { flex: none; width: 64px; height: 64px; margin: 0; border-width: 3px; }
+  .part__head .badge img, .badge img { width: 44px; height: 44px; }
+  .part__head .title { font-size: clamp(2rem, 4.3vw, 3.15rem); }
   .fair, .watch, .last, .faq { padding-top: 44px; padding-bottom: 44px; }
   .faq__list { columns: 1; margin-top: 26px; }
   .faq__item { margin-bottom: 16px; padding: 20px; }
