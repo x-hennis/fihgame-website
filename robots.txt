@@ -18,3 +18,4 @@ User-agent: meta-externalagent
 User-agent: CCBot
 Allow: /
 
+Sitemap: https://fihgame.com/sitemap.xml
