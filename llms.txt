@@ -84,6 +84,7 @@ FIH is made by Niklas Menten, an independent developer from Cologne in Germany.
 - [FIH, Korean](https://fihgame.com/ko/)
 - [FIH, Chinese (Simplified)](https://fihgame.com/zh-cn/)
 - [Trailer, 30 seconds (MP4)](https://fihgame.com/assets/video/trailer.mp4)
+- [Trailer on YouTube](https://www.youtube.com/watch?v=qS6bS_np1VE)
 - [Imprint](https://fihgame.com/imprint/)
 - [Privacy](https://fihgame.com/privacy/)
 
