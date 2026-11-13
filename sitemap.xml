@@ -1,12 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://fihgame.com/</loc></url>
-  <url><loc>https://fihgame.com/de/</loc></url>
-  <url><loc>https://fihgame.com/fr/</loc></url>
-  <url><loc>https://fihgame.com/es/</loc></url>
-  <url><loc>https://fihgame.com/pt-br/</loc></url>
-  <url><loc>https://fihgame.com/ru/</loc></url>
-  <url><loc>https://fihgame.com/ja/</loc></url>
-  <url><loc>https://fihgame.com/ko/</loc></url>
-  <url><loc>https://fihgame.com/zh-cn/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://fihgame.com/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: A Cozy Idle Game About Fish for PC (Steam)</video:title>
+      <video:description>FIH is a cozy idle game about collecting fish, free to play on PC (Steam). Hatch eggs, collect 50+ fish with Shiny forms, build your reef and dive through 10+ zones.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/de/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: Gemütliches Idle-Spiel voller Fische für PC (Steam)</video:title>
+      <video:description>FIH ist ein gemütliches Idle-Spiel (Cozy Game) voller Fische, kostenlos für PC auf Steam. Brüte Eier aus, sammle 50+ Fische mit Shiny-Formen und bau dein Riff aus.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/fr/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH, un jeu idle cosy rempli de poissons sur PC (Steam)</video:title>
+      <video:description>FIH est un jeu idle cosy (cozy game) rempli de poissons, gratuit sur PC (Steam). Fais éclore des œufs, collectionne 50+ poissons et leurs formes Shiny, agrandis ton récif.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/es/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: juego idle acogedor lleno de peces para PC (Steam)</video:title>
+      <video:description>FIH es un juego idle acogedor (cozy game) lleno de peces, gratis para PC en Steam. Eclosiona huevos, colecciona 50+ peces con sus formas Shiny y haz crecer tu arrecife.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/pt-br/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: jogo idle aconchegante cheio de peixes para PC (Steam)</video:title>
+      <video:description>FIH é um jogo idle aconchegante (cozy game) cheio de peixes, gratuito para PC na Steam. Choque ovos, colecione 50+ peixes com suas formas Shiny e faça seu recife crescer.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ru/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: уютная idle-игра про рыб для ПК (Steam)</video:title>
+      <video:description>FIH это уютная idle-игра (cozy game) про рыб, бесплатная, для ПК в Steam. Выводи рыб из яиц, собери 50+ видов с шайни-формами и расти свой риф.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ja/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH：魚がいっぱいの、のんびり放置ゲーム（PC、Steam）</video:title>
+      <video:description>FIHは魚がいっぱいの、のんびり放置ゲーム（cozy game）です。PC（Steam）向け、基本プレイ無料。タマゴをふ化させ、50種類以上の魚とシャイニーを集めて、リーフを育てましょう。</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ko/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH: 물고기가 가득한 아늑한 방치형 게임 (PC, Steam)</video:title>
+      <video:description>FIH는 물고기가 가득한 아늑한 방치형 게임(cozy game)입니다. PC(Steam)에서 무료로 즐길 수 있습니다. 알을 부화시키고, 50종 이상의 물고기와 샤이니를 모으고, 산호초를 키워 보세요.</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/zh-cn/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/"/>
+    <video:video>
+      <video:thumbnail_loc>https://fihgame.com/assets/video/poster.webp</video:thumbnail_loc>
+      <video:title>FIH：满是小鱼的休闲放置游戏（PC，Steam）</video:title>
+      <video:description>FIH是一款满是小鱼的休闲放置游戏（cozy game），在PC（Steam）上免费游玩。孵化鱼卵，收集50多种鱼和它们的闪光形态，让你的珊瑚礁不断成长。</video:description>
+      <video:content_loc>https://fihgame.com/assets/video/trailer.mp4</video:content_loc>
+      <video:duration>30</video:duration>
+      <video:publication_date>2026-11-13</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://fihgame.com/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/de/impressum/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/fr/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/es/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/pt-br/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ru/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ja/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ko/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/zh-cn/imprint/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/imprint/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/de/datenschutz/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/fr/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/es/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/pt-br/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ru/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ja/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/ko/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://fihgame.com/zh-cn/privacy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fihgame.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fihgame.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fihgame.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://fihgame.com/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://fihgame.com/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://fihgame.com/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fihgame.com/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://fihgame.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://fihgame.com/zh-cn/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fihgame.com/privacy/"/>
+  </url>
 </urlset>

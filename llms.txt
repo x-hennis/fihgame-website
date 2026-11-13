@@ -1,0 +1,103 @@
+# FIH: A Little Ocean of Friends
+
+> FIH (A Little Ocean of Friends) is a cozy idle game about fish for PC. Your fish dig through the sand of your reef on their own, you hatch eggs, collect 50+ kinds of fish and decorate your reef. The reef keeps growing while you are away. It is free to play, has no ads and comes to Steam for Windows PCs.
+
+FIH is a cozy game: an idle and collecting game about fish with nothing to lose and no time pressure.
+
+## Facts
+
+- Name: FIH (subtitle: A Little Ocean of Friends)
+- Kind of game: cozy game, idle game, collecting game, casual game
+- Theme: fish, a coral reef, the sea, an aquarium that grows
+- Platform: Windows PC, on Steam
+- Price: free to play, no ads; every fish and every Shiny can be had by playing
+- Release: not released yet, no date set; the Steam page is on its way
+- Languages: English, German, French, Spanish, Portuguese (Brazil), Russian, Japanese, Korean, Chinese (Simplified)
+- Made by: Niklas Menten, an independent developer from Cologne, Germany
+- Website: https://fihgame.com/
+- Contact: info@niklasmenten.de
+
+## What you do in the game
+
+- **Your fish do the digging.** Up to six of your fish dig through the sand mounds of your reef. Under them lie coins, eggs and old finds. Mound by mound you go deeper: through 10+ zones, from the Sunlit Shallows down to the Abyss, past mini bosses and zone bosses.
+- **Every egg is a surprise.** Hatch your eggs in the Hatchery and meet a new fish. Many are Common, a few are Mythic, and now and then one comes out Shiny. The exact odds are on the screen before you hatch. And every season has its own rare seasonal fish.
+- **50+ fish, each with a Shiny form.** Fill your Fish-Dex, once with the normal fish and once with the Shinies. Bond two fish of a kind to make one stronger, and put your favourites in the aquarium, where they swim through your reef.
+- **Send a team out to sea.** In Explore a team of three follows the treasure map through eight areas, from the Sunny Shallows to the Ancient Ocean Temple. The fish fight on their own, you pick the team. Each area has ten stages, and the last one is a boss. Every win brings coins, and every boss opens a new area.
+- **Climb the Reef League.** In the Reef League your team of three takes on other teams. Every win brings rating, and with it you climb through six leagues, from Sandy up to Leviathan. On the way up you collect eggs, shells and coins. And with every new season the climb begins again.
+- **Make the reef your own.** Set lighthouses, corals, old amphorae and treasure chests around your sand mounds. Many decorations bring a small bonus too. Visit the reefs of your Steam friends and lend each other a fish.
+- **It goes on while you are away.** Close the game and your fish keep digging for a while. When you come back, coins and eggs are waiting. An upgrade tree with 277 nodes, daily and weekly goals and 69 achievements give you something to aim for. And with the Great Tide you start the dive again from the top, with pearls for lasting blessings.
+
+## Fair play
+
+- **Free, and no ads.** FIH is free to play, and there is not a single ad in it.
+- **Every fish by playing.** Every fish and every Shiny can be had without paying anything.
+- **Odds always shown.** You see the exact chances before you hatch an egg.
+- There is a shop for players who want to save time or support the game. Nothing in it is needed to get every fish.
+
+## Questions and answers
+
+### What is FIH?
+
+FIH (A Little Ocean of Friends) is a cozy idle game about fish for PC. Your fish dig through the sand of your reef on their own, you hatch eggs, collect 50+ kinds of fish and decorate your reef. The reef keeps growing while you are away.
+
+### What kind of game is FIH?
+
+It is a relaxed idle and collecting game, a cozy game. There is no time pressure and nothing to lose. You can play for a few minutes or leave it open beside whatever else you do.
+
+### Is FIH free?
+
+Yes. FIH is free to play and has no ads. Every fish and every Shiny can be had by playing. There is a shop for players who want to save time or support the game, and nothing in it is needed.
+
+### Where and when can I play FIH?
+
+FIH comes to Steam for Windows PCs. There is no release date yet, and the Steam page is on its way.
+
+### How many fish are there in FIH?
+
+More than 50 kinds in 8 rarities, from Common to Ancient, and every season brings a seasonal fish of its own. Every fish comes out of an egg, and you see the exact chances before you hatch one.
+
+### What is a Shiny?
+
+A Shiny is a rare form of a fish with its own colours. About 1 in 512 eggs hatches one. Shinies are for collecting: they are no stronger than normal fish, and they have their own page in the Fish-Dex.
+
+### What do you do in FIH?
+
+Your fish dig down through 10+ depth zones, past bosses. You hatch eggs, collect your fish and make them stronger, send a team through the areas of Explore, climb the Reef League and decorate your reef.
+
+### Which languages does FIH have?
+
+English, German, French, Spanish, Portuguese (Brazil), Russian, Japanese, Korean and Chinese (Simplified).
+
+### Who makes FIH?
+
+FIH is made by Niklas Menten, an independent developer from Cologne in Germany.
+
+## Pages
+
+- [FIH, English](https://fihgame.com/)
+- [FIH, German](https://fihgame.com/de/)
+- [FIH, French](https://fihgame.com/fr/)
+- [FIH, Spanish](https://fihgame.com/es/)
+- [FIH, Portuguese (Brazil)](https://fihgame.com/pt-br/)
+- [FIH, Russian](https://fihgame.com/ru/)
+- [FIH, Japanese](https://fihgame.com/ja/)
+- [FIH, Korean](https://fihgame.com/ko/)
+- [FIH, Chinese (Simplified)](https://fihgame.com/zh-cn/)
+- [Trailer, 30 seconds (MP4)](https://fihgame.com/assets/video/trailer.mp4)
+- [Imprint](https://fihgame.com/imprint/)
+- [Privacy](https://fihgame.com/privacy/)
+
+## Optional
+
+- [Picture: The reef in the Sunlit Shallows with the fish digging](https://fihgame.com/assets/shots/g_reef.webp)
+- [Picture: Fish swimming through the Kelp Forest](https://fihgame.com/assets/shots/g_kelp.webp)
+- [Picture: A seasonal fish hatches in the Hatchery](https://fihgame.com/assets/shots/g_seasonal.webp)
+- [Picture: The purple Amethyst Grotto](https://fihgame.com/assets/shots/g_amethyst.webp)
+- [Picture: Fish digging at the great mound of a zone boss](https://fihgame.com/assets/shots/g_boss.webp)
+- [Picture: The Fish window with the collection](https://fihgame.com/assets/shots/g_fish.webp)
+- [Picture: Two teams of fish in a fight in Explore](https://fihgame.com/assets/shots/g_battle.webp)
+- [Picture: A win in the Reef League](https://fihgame.com/assets/shots/g_victory.webp)
+- [Picture: The camp of Explore at night](https://fihgame.com/assets/shots/g_camp.webp)
+- [Picture: The dark Abyss with glowing corals](https://fihgame.com/assets/shots/g_abyss.webp)
+- [Picture: The arena of the Reef League](https://fihgame.com/assets/shots/g_league.webp)
+- [Picture: The Great Upwelling at the bottom of the sea](https://fihgame.com/assets/shots/g_upwelling.webp)

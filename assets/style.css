@@ -4,15 +4,15 @@
    page (main.js fades through the game's ten depth zones). Phones first: most visitors come
    on one. */
 
-@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=558e5e9fbb") format("woff2"); font-weight: 300 700; font-display: swap; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=558e5e9fbb") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=93df2108d3") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
 /* the game's own fallbacks: Cyrillic (Nunito in titles, Inter in text), Japanese, Korean, Chinese
    (Noto Sans, cut down to the characters the page uses) */
-@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=558e5e9fbb") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=558e5e9fbb") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=558e5e9fbb") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=558e5e9fbb") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=558e5e9fbb") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=93df2108d3") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=93df2108d3") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
   --ink: #071a2b;
@@ -27,14 +27,14 @@
   --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --wide: 1180px;
-  --panel: #f3ecdd url("ui/linen.webp?v=558e5e9fbb") 0 0 / 440px 320px;   /* the game's linen glass */
+  --panel: #f3ecdd url("ui/linen.webp?v=93df2108d3") 0 0 / 440px 320px;   /* the game's linen glass */
 }
 /* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
    everything that can be clicked; the same size and hot spots as in the game */
-:root { --cur-arrow: url("ui/cursors/arrow.png?v=558e5e9fbb") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=558e5e9fbb") 15 3, pointer; }
-@supports (cursor: image-set(url("a.png?v=558e5e9fbb") 1x, url("b.png?v=558e5e9fbb") 2x) 0 0, auto) {
-  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=558e5e9fbb") 1x, url("ui/cursors/arrow@2x.png?v=558e5e9fbb") 2x) 11 4, auto;
-          --cur-point: image-set(url("ui/cursors/point.png?v=558e5e9fbb") 1x, url("ui/cursors/point@2x.png?v=558e5e9fbb") 2x) 15 3, pointer; }
+:root { --cur-arrow: url("ui/cursors/arrow.png?v=93df2108d3") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=93df2108d3") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png?v=93df2108d3") 1x, url("b.png?v=93df2108d3") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=93df2108d3") 1x, url("ui/cursors/arrow@2x.png?v=93df2108d3") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png?v=93df2108d3") 1x, url("ui/cursors/point@2x.png?v=93df2108d3") 2x) 15 3, pointer; }
 }
 html { cursor: var(--cur-arrow); }
 a, button, summary, [role="button"] { cursor: var(--cur-point); }
@@ -96,12 +96,12 @@ p { margin: 0 0 1em; }
 /* where two pieces lie over each other one fades out as the other fades in, and the two are
    added up (plus-lighter): wood, shadow and linen stay exactly as strong as in one piece */
 .wood i + i { mix-blend-mode: plus-lighter; }
-.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=558e5e9fbb"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
+.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=93df2108d3"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
 .wood--bar i:nth-child(1) { right: 0; left: calc(50% - 30px); background-position: right top;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 60px); mask-image: linear-gradient(90deg, transparent, #000 60px); }
 .wood--bar i:nth-child(2) { left: 0; right: calc(50% - 30px); background-position: left top;
   -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); }
-.wood--panel i { background-image: url("ui/wood_panel.webp?v=558e5e9fbb"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
+.wood--panel i { background-image: url("ui/wood_panel.webp?v=93df2108d3"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
 .wood--panel i:nth-child(1) { right: 0; bottom: 0; left: calc(50% - 40px); top: calc(50% - 40px); background-position: right bottom;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px);
   mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px); }
@@ -240,7 +240,7 @@ span.jelly { cursor: var(--cur-arrow); }
    The frame is drawn by the game round a panel of exactly 16:9 (800 x 450, and 480 x 270 for
    phones, each with 48 px of room): the whole picture shows, the wood covers only its outermost
    edge. The numbers below are that room as shares of the panel. */
-.shot { position: relative; margin: 0 auto; width: 88%; aspect-ratio: 16 / 9; filter: drop-shadow(0 16px 22px rgba(7,26,43,.3)); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.shot { position: relative; margin: 0 auto; width: 90%; aspect-ratio: 16 / 9; filter: drop-shadow(0 16px 22px rgba(7,26,43,.3)); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
 .shot__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 1.75% / 3.1%; background: #0b3c52; }
 .shot__frame { position: absolute; left: -6%; top: -10.6667%; width: 112%; height: 121.3333%; max-width: none; pointer-events: none; }
 .shot__frame--s { display: none; left: -10%; top: -17.7778%; width: 120%; height: 135.5556%; }
@@ -250,9 +250,16 @@ span.jelly { cursor: var(--cur-arrow); }
 
 /* ---------- the parts of the game ---------- */
 .part { padding: clamp(56px, 10vh, 120px) 0; }
-.part__in { max-width: var(--wide); margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1.22fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+/* The framed picture is always clearly wider than the card beside it, and the same size in every
+   part (owner, 2026-11-13). The columns are fixed shares (minmax(0, ...): a long word in a card
+   cannot widen its column), and a flipped part flips the shares with the order: before, the
+   picture of every second part sat in the narrow column and was smaller than its card. */
+.part__in { max-width: var(--wide); margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+.part--flip .part__in { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
 .part--flip .part__media { order: 2; }
-.part__head { margin-bottom: 22px; }
+/* the icon stands beside the heading, on wide screens as on phones (owner, 2026-11-13) */
+.part__head { display: flex; align-items: center; gap: 18px; margin-bottom: 22px; }
+.part__head .badge { flex: none; margin-bottom: 0; }
 
 .school { margin-top: clamp(40px, 7vh, 72px); overflow: hidden; padding: 8px 0;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
@@ -277,13 +284,18 @@ span.jelly { cursor: var(--cur-arrow); }
 .zones__item span { font-size: .88rem; color: var(--ink-soft); padding: 2px 14px 12px; }
 
 /* ---------- fair play ---------- */
-.fair, .watch, .last { max-width: var(--wide); margin: 0 auto; padding: clamp(56px, 10vh, 120px) 24px; }
+.fair, .watch, .last, .faq { max-width: var(--wide); margin: 0 auto; padding: clamp(56px, 10vh, 120px) 24px; }
 .fair__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
 .fair__card { text-align: center; padding: 30px 24px; }
 .fair__card img { width: 84px; height: 84px; margin: 0 auto 12px; animation: bob 4.4s ease-in-out infinite; filter: drop-shadow(0 6px 6px rgba(7,26,43,.22)); }
 .fair__card:nth-child(2) img { animation-delay: -1.5s; }
 .fair__card:nth-child(3) img { animation-delay: -3s; }
 .fair__card h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; }
+/* questions and answers: two columns of cards, one on phones */
+.faq__list { columns: 2; column-gap: 24px; margin-top: 40px; }
+.faq__item { break-inside: avoid; margin-bottom: 24px; padding: 24px 26px; }
+.faq__item h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; text-wrap: balance; }
+.faq__item p { margin: 0; }
 .fair__note { max-width: 44em; margin: 30px auto 0; text-align: center; font-family: var(--display); font-weight: 500; font-size: 1.1rem; color: #fff;
   -webkit-text-stroke: 4px rgba(7,26,43,.45); paint-order: stroke fill; }
 
@@ -391,7 +403,9 @@ html:lang(ja) .doc :is(h1, h2, h3, th), html:lang(ko) .doc :is(h1, h2, h3, th), 
   .part__text .card { order: 3; }
   .badge { flex: none; width: 64px; height: 64px; margin: 0; border-width: 3px; }
   .badge img { width: 44px; height: 44px; }
-  .fair, .watch, .last { padding-top: 44px; padding-bottom: 44px; }
+  .fair, .watch, .last, .faq { padding-top: 44px; padding-bottom: 44px; }
+  .faq__list { columns: 1; margin-top: 26px; }
+  .faq__item { margin-bottom: 16px; padding: 20px; }
   .school, .zones { margin-top: 30px; }
   .fair__grid { grid-template-columns: 1fr; max-width: 460px; margin-left: auto; margin-right: auto; }
   .bar__nav { display: none; }
