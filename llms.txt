@@ -21,11 +21,27 @@ FIH is a cozy game: an idle and collecting game about fish with nothing to lose 
 
 - **Your fish do the digging.** Up to six of your fish dig through the sand mounds of your reef. Under them lie coins, eggs and old finds. Mound by mound you go deeper: through 10+ zones, from the Sunlit Shallows down to the Abyss, past mini bosses and zone bosses.
 - **Every egg is a surprise.** Hatch your eggs in the Hatchery and meet a new fish. Many are Common, a few are Mythic, and now and then one comes out Shiny. The exact odds are on the screen before you hatch. And every season has its own rare seasonal fish.
-- **50+ fish, each with a Shiny form.** Fill your Fish-Dex, once with the normal fish and once with the Shinies. Bond two fish of a kind to make one stronger, and put your favourites in the aquarium, where they swim through your reef.
-- **Send your team on an expedition.** In Explore a team of three follows the treasure map through eight areas, from the Sunny Shallows to the Ancient Ocean Temple. The fish fight on their own, you pick the team. Each area has ten stages, and the last one is a boss. Every win brings coins, and every boss opens a new area.
-- **Climb the Reef League.** In the Reef League your team of three takes on other teams. Every win brings rating, and with it you climb through six leagues, from Sandy up to Leviathan. On the way up you collect eggs, shells and coins. And with every new season the climb begins again.
+- **50+ fish, each with a Shiny form.** Fill your Fish-Dex, once with the normal fish and once with the Shinies. Every fish is its own detailed 3D model and swims in its own way. Bond two fish of a kind to make one stronger, and put your favourites in the aquarium, where they swim through your reef.
+- **Send your team on an expedition.** In Explore a team of up to five fish follows the treasure map through eight areas, from the Sunny Shallows to the Ancient Ocean Temple. Every fish fights in its own way: sharks bite, rays sweep in, crabs pinch. Before every fight you pick a tactic, and every fish has an element: Ember melts Frost, Frost wilts Bloom, Bloom smothers Ember. Each area has ten stages, and the last one is a boss.
+- **Climb the Reef League.** In the Reef League your team takes on other teams. Every win brings rating, and with it you climb through six leagues, from Sandy up to Leviathan. On the way up you collect eggs, shells and coins. And with every new season the climb begins again.
 - **Make the reef your own.** Set lighthouses, corals, old amphorae and treasure chests around your sand mounds. Many decorations bring a small bonus too. Visit the reefs of your Steam friends and lend each other a fish.
-- **Your reef never sleeps.** Close the game and your fish keep digging for a while. When you come back, coins and eggs are waiting. An upgrade tree with 277 nodes, daily and weekly goals and 69 achievements give you something to aim for. And with the Great Tide you start the dive again from the top, with pearls for lasting blessings.
+- **Your reef never sleeps.** Close the game and your fish keep digging for a while. When you come back, coins and eggs are waiting. An upgrade tree with 277 nodes, daily and weekly goals and 68 achievements give you something to aim for. And with the Great Tide you start the dive again from the top, with pearls for lasting blessings.
+
+## A fish for every season
+
+Four rare fish come only in their own season. Every egg has a small chance for the fish of the season, and it is always a little stronger than your best other fish.
+
+- **Wintervail** (Winter): A dragon koi of the winter sea with a crown of red coral and veils for fins. It only comes in the cold season, and only to the lucky.
+- **Blossomwake** (Spring): A gentle whale shark of the spring sea, its spots grown over with moss and cherry blossoms. It drifts in only while the blossoms fall.
+- **Sunwing** (Summer): A manta of the summer sea, its wings glowing gold and orange like the evening sun on the water. It only glides in while the days are long.
+- **Emberleaf** (Autumn): A leafy seadragon of the autumn sea, hung with leaves of red, orange and gold. It only drifts in while the leaves fall.
+
+## There is always something going on
+
+- **Fish Storm.** Now and then a Fish Storm sweeps in: a whole swarm of fish rushes in and helps you dig.
+- **Whale and mosasaur.** A whale drifts by high above your reef. And down in the deepest zones something much bigger swims past.
+- **Gold Rush and Golden Mound.** Little surprises in the reef: for a while every find pays more, or a mound shines golden with a treasure inside.
+- **Mouse or controller.** Play with mouse and keyboard, or lean back with an Xbox or PlayStation controller.
 
 ## Fair play
 
@@ -62,7 +78,11 @@ A Shiny is a rare form of a fish with its own colours. About 1 in 512 eggs hatch
 
 ### What do you do in FIH?
 
-Your fish dig down through 10+ depth zones, past bosses. You hatch eggs, collect your fish and make them stronger, send a team through the areas of Explore, climb the Reef League and decorate your reef.
+Your fish dig down through 10+ depth zones, past bosses. You hatch eggs, collect your fish and make them stronger, send a team of up to five through the areas of Explore, climb the Reef League and decorate your reef.
+
+### Can I play FIH with a controller?
+
+Yes. FIH plays with mouse and keyboard or with an Xbox or PlayStation controller. A small bar on the screen always shows what each button does.
 
 ### Which languages does FIH have?
 
@@ -83,8 +103,8 @@ FIH is made by Niklas Menten, an independent developer from Cologne in Germany.
 - [FIH, Japanese](https://fihgame.com/ja/)
 - [FIH, Korean](https://fihgame.com/ko/)
 - [FIH, Chinese (Simplified)](https://fihgame.com/zh-cn/)
-- [Trailer, 30 seconds (MP4)](https://fihgame.com/assets/video/trailer.mp4)
-- [Trailer on YouTube](https://www.youtube.com/watch?v=qS6bS_np1VE)
+- [Trailer, 40 seconds (MP4)](https://fihgame.com/assets/video/trailer_tour.mp4)
+- [FIH on YouTube](https://www.youtube.com/@fihgame)
 - [Imprint](https://fihgame.com/imprint/)
 - [Privacy](https://fihgame.com/privacy/)
 
