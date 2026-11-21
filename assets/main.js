@@ -354,12 +354,18 @@
       holder.classList.remove("is-yt");
       if (ytBox) ytBox.hidden = true;
     };
-    var embedYT = function () {
+    var autoDone = false, inView = false;
+    var embedYT = function (auto) {
+      autoDone = true;
       dropYT();
       video.pause();
+      // (started by itself, not by a click: with sound only once the visitor has clicked or tapped
+      // on the page, as browsers allow it; before that, and on a touch screen, where a phone
+      // would stop it, it starts without sound and YouTube's own speaker button turns it on)
+      var muted = !!auto && (touch || !(navigator.userActivation && navigator.userActivation.hasBeenActive));
       frame = document.createElement("iframe");
       frame.className = "shot__img shot__yt";
-      frame.src = data.yt + chosen.dataset.yt + "?autoplay=1&rel=0&playsinline=1";
+      frame.src = data.yt + chosen.dataset.yt + "?autoplay=1&rel=0&playsinline=1" + (muted ? "&mute=1" : "");
       frame.title = video.getAttribute("aria-label") || "FIH";
       frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
       frame.referrerPolicy = "strict-origin-when-cross-origin";
@@ -368,6 +374,7 @@
       if (music.on) musicLevel(0, 0.5);
     };
     var playLocal = function (btn) {
+      autoDone = true;
       dropYT();
       load(btn);
       holder.classList.add("is-playing");
@@ -377,6 +384,7 @@
     var start = function (btn) {
       if (btn && btn.dataset.yt && ytBox) {
         if (ytOn()) { embedYT(); return; }
+        autoDone = true;
         dropYT();
         video.pause();
         holder.classList.add("is-playing");
@@ -394,8 +402,22 @@
       });
       ytBox.querySelector('[data-yt="local"]').addEventListener("click", function () { playLocal(chosen); });
     }
-    // consent taken back: the embedded player goes at once
-    document.addEventListener("fih-consent", function () { if (frame && !ytOn()) { dropYT(); holder.classList.remove("is-playing"); } });
+    // with YouTube allowed the trailer starts by itself as soon as it is in sight (owner,
+    // 2026-11-21: no still with a button then), once a visit; not when the visitor asked for less
+    // motion, nor once they started or picked something themselves
+    var autoStart = function () {
+      if (autoDone || !inView || !ytOn() || calm || !chosen.dataset.yt) return;
+      embedYT(true);
+    };
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) { inView = es[0].isIntersecting; autoStart(); }, { threshold: 0.6 }).observe(holder);
+    }
+    // consent taken back: the embedded player goes at once; consent given with the trailer in
+    // sight: it starts
+    document.addEventListener("fih-consent", function () {
+      if (frame && !ytOn()) { dropYT(); holder.classList.remove("is-playing"); }
+      autoStart();
+    });
     tabBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         if (btn === chosen) return;
