@@ -54,14 +54,35 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.open) { menu.open = false; menu.querySelector("summary").focus(); } });
   }
 
-  /* ---- the start picture moves: an animated picture that loops without a jump (AVIF, or WebP
-     where a browser has no AVIF), laid over the still one once it has come in whole. Not with
+  /* ---- the start picture moves: a loop without a jump, on a computer an animated picture (AVIF,
+     or WebP where a browser has no AVIF), on a phone or tablet a video (below), laid over the
+     still one once it has come in whole. Not with
      reduced motion or a data saver; without it (or without JavaScript) the still stays, which is
      the loop's first picture ---- */
   var loopPic = document.querySelector(".hero__vid");
   var saver = navigator.connection && navigator.connection.saveData;
-  if (loopPic && data.hero && !calm && !saver) {
-    var tall = window.matchMedia("(max-aspect-ratio: 4/5)").matches;
+  var touch = window.matchMedia("(pointer: coarse)").matches;
+  var tall = window.matchMedia("(max-aspect-ratio: 4/5)").matches;
+  var vid = document.createElement("video");
+  if (loopPic && data.hero && !calm && !saver && (touch || tall) && vid.canPlayType('video/mp4; codecs="avc1.640028"')) {
+    /* phones and tablets: the loop as a video, which their video chip plays (as an animated
+       picture it stuttered on a phone); it rests while the start is out of sight, and where a
+       phone plays nothing by itself (a power saver) the still stays */
+    vid.className = "hero__vid";
+    vid.muted = vid.defaultMuted = vid.loop = vid.playsInline = vid.autoplay = true;
+    ["muted", "playsinline", "autoplay", "loop", "disablepictureinpicture"].forEach(function (a) { vid.setAttribute(a, ""); });
+    vid.setAttribute("aria-hidden", "true");
+    vid.tabIndex = -1;
+    vid.preload = "auto";
+    vid.addEventListener("playing", function () { vid.classList.add("on"); }, { once: true });
+    vid.src = data.hero + (tall ? "tall" : "wide_s") + ".mp4?v=" + data.v;
+    loopPic.parentNode.replaceChild(vid, loopPic);
+    var go = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
+    go();
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) { if (es[0].isIntersecting) go(); else vid.pause(); }).observe(vid);
+    }
+  } else if (loopPic && data.hero && !calm && !saver) {
     var cut = tall ? "tall" : (window.innerWidth * (window.devicePixelRatio || 1) > 1500 ? "wide" : "wide_s");
     var pic = document.createElement("picture"), avif = document.createElement("source");
     avif.type = "image/avif";
