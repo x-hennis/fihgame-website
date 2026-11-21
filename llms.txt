@@ -13,7 +13,7 @@ FIH is a cozy game: an idle and collecting game about fish with nothing to lose 
 - Price: free to play, no ads; every fish and every Shiny can be had by playing
 - Release: not released yet, no date set; the Steam page is on its way
 - Languages: English, German, French, Spanish, Portuguese (Brazil), Russian, Japanese, Korean, Chinese (Simplified)
-- Made by: Niklas Menten, an independent developer from Cologne, Germany
+- Made by: an independent developer from Cologne, Germany
 - Website: https://fihgame.com/
 - Contact: info@niklasmenten.de
 
@@ -90,7 +90,7 @@ English, German, French, Spanish, Portuguese (Brazil), Russian, Japanese, Korean
 
 ### Who makes FIH?
 
-FIH is made by Niklas Menten, an independent developer from Cologne in Germany.
+FIH is made by an independent developer from Cologne in Germany.
 
 ## Pages
 
@@ -104,6 +104,7 @@ FIH is made by Niklas Menten, an independent developer from Cologne in Germany.
 - [FIH, Korean](https://fihgame.com/ko/)
 - [FIH, Chinese (Simplified)](https://fihgame.com/zh-cn/)
 - [Trailer, 40 seconds (MP4)](https://fihgame.com/assets/video/trailer_tour.mp4)
+- [Trailer on YouTube](https://www.youtube.com/watch?v=cWMwjLK6kR4)
 - [FIH on YouTube](https://www.youtube.com/@fihgame)
 - [Imprint](https://fihgame.com/imprint/)
 - [Privacy](https://fihgame.com/privacy/)

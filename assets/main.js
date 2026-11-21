@@ -4,7 +4,8 @@
 (function () {
   "use strict";
   var root = document.documentElement;
-  var data = window.FIH || { zones: [] };
+  var data = { zones: [] };
+  try { data = JSON.parse(document.getElementById("fih-data").textContent); } catch (e) {}
   var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   root.classList.add("js");
 
@@ -161,6 +162,27 @@
       tiles.forEach(function (b, j) { b.classList.toggle("on", j === k); if (j === k) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); });
       at = k; shiny = sh;
     }
+    // the stage keeps one size whatever fish stands on it (owner, 2026-11-21: the list under it
+    // jumped with every fish): the card is as tall as the longest text of any fish needs
+    var sizeCard = function () {
+      var probe = mCard.cloneNode(true);
+      probe.setAttribute("aria-hidden", "true");
+      probe.style.cssText = "position:absolute;visibility:hidden;left:0;top:0;min-height:0;width:" + mCard.getBoundingClientRect().width + "px";
+      stage.appendChild(probe);
+      var tallest = 0;
+      md.fish.forEach(function (f) {
+        probe.querySelector(".meet__name").textContent = f.n;
+        probe.querySelector(".meet__desc").textContent = f.d;
+        probe.querySelector(".meet__fact span").textContent = f.f;
+        tallest = Math.max(tallest, probe.getBoundingClientRect().height);
+      });
+      probe.remove();
+      mCard.style.minHeight = Math.ceil(tallest) + "px";
+    };
+    sizeCard();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeCard);
+    var sizeT = 0;
+    window.addEventListener("resize", function () { clearTimeout(sizeT); sizeT = setTimeout(sizeCard, 150); });
     tiles.forEach(function (b, j) { b.addEventListener("click", function () { picked = true; put(j, shiny); }); });
     forms.forEach(function (b) { b.addEventListener("click", function () { picked = true; put(at, b.dataset.shiny === "1"); }); });
     if (!calm && "IntersectionObserver" in window) {
@@ -173,6 +195,15 @@
   /* ---- the trailers: three to pick, the first one plays by default; big screens get the sharp file ---- */
   var tabBtns = Array.prototype.slice.call(document.querySelectorAll(".tabs__b"));
   var sharp = function () { return window.innerWidth * (window.devicePixelRatio || 1) > 1700; };
+
+  /* ---- a picture that fails to come in (a host that hiccups right after an upload) is asked
+     for once more a moment later ---- */
+  document.addEventListener("error", function (e) {
+    var im = e.target;
+    if (!im || im.tagName !== "IMG" || im.dataset.retried || !im.getAttribute("src")) return;
+    im.dataset.retried = "1";
+    setTimeout(function () { var u = im.getAttribute("src"); im.src = u + (u.indexOf("?") < 0 ? "?" : "&") + "r=1"; }, 1500);
+  }, true);
 
   /* ---- bubbles ---- */
   var box = document.querySelector(".sea__bubbles");
@@ -247,22 +278,100 @@
     mBtn.hidden = true;
   }
 
-  /* ---- the trailer ---- */
+  /* ---- the privacy settings (the only thing they cover is YouTube; the choice itself is kept in
+     this browser, nothing else is stored): shown until a choice is saved, open again from the
+     footer. "Only necessary" and "Allow all" weigh the same; nothing optional is on before. ---- */
+  var CKEY = "fih-consent", CVER = 1;
+  var consent = null;
+  try { var c0 = JSON.parse(localStorage.getItem(CKEY) || "null"); if (c0 && c0.v === CVER) consent = c0; } catch (e) {}
+  var cbox = document.getElementById("consent");
+  var ytOn = function () { return !!(consent && consent.yt); };
+  var saveConsent = function (yt) {
+    consent = { v: CVER, yt: !!yt, at: new Date().toISOString() };
+    try { localStorage.setItem(CKEY, JSON.stringify(consent)); } catch (e) {}
+    document.dispatchEvent(new CustomEvent("fih-consent"));
+  };
+  if (cbox) {
+    var copts = cbox.querySelector(".consent__opts"), cyt = cbox.querySelector('input[name="yt"]');
+    var cbtn = function (k) { return cbox.querySelector('[data-c="' + k + '"]'); };
+    var openBox = function (details) {
+      cbox.hidden = false;
+      copts.hidden = !details;
+      cbtn("save").hidden = !details;
+      cbtn("settings").hidden = !!details;
+      cyt.checked = ytOn();
+      (details ? cyt : cbtn("necessary")).focus({ preventScroll: true });
+    };
+    var closeBox = function () { cbox.hidden = true; };
+    cbtn("necessary").addEventListener("click", function () { saveConsent(false); closeBox(); });
+    cbtn("all").addEventListener("click", function () { saveConsent(true); closeBox(); });
+    cbtn("settings").addEventListener("click", function () { openBox(true); });
+    cbtn("save").addEventListener("click", function () { saveConsent(cyt.checked); closeBox(); });
+    document.querySelectorAll("[data-consent-open]").forEach(function (b) { b.addEventListener("click", function () { openBox(true); }); });
+    if (!consent) openBox(false);
+  }
+
+  /* ---- the trailer: three to pick. The tour is the one on YouTube: it is embedded only with
+     consent (saved, or given in the notice right in the player); without it the notice offers
+     to load it once, or to watch the site's own file ---- */
   var holder = document.querySelector(".shot--video");
   if (holder) {
     var video = holder.querySelector("video");
     var play = holder.querySelector(".shot__play");
+    var ytBox = holder.querySelector(".yt");
     var chosen = tabBtns[0];
+    var frame = null;
     var load = function (btn) {
       var src = sharp() ? btn.dataset.hd : btn.dataset.src;
       if (video.currentSrc.indexOf(src.split("?")[0]) < 0) { video.src = src; }
     };
-    play.addEventListener("click", function () {
-      if (chosen) load(chosen);
+    var dropYT = function () {
+      if (frame) { frame.remove(); frame = null; }
+      holder.classList.remove("is-yt");
+      if (ytBox) ytBox.hidden = true;
+    };
+    var embedYT = function () {
+      dropYT();
+      video.pause();
+      frame = document.createElement("iframe");
+      frame.className = "shot__img shot__yt";
+      frame.src = data.yt + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = video.getAttribute("aria-label") || "FIH";
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      holder.insertBefore(frame, video.nextSibling);
+      holder.classList.add("is-playing", "is-yt");
+      if (music.on) musicLevel(0, 0.5);
+    };
+    var playLocal = function (btn) {
+      dropYT();
+      load(btn);
       holder.classList.add("is-playing");
       video.controls = true;
-      video.play();
-    });
+      var p = video.play(); if (p && p.catch) p.catch(function () {});
+    };
+    var start = function (btn) {
+      if (btn && btn.dataset.yt && ytBox) {
+        if (ytOn()) { embedYT(); return; }
+        dropYT();
+        video.pause();
+        holder.classList.add("is-playing");
+        ytBox.hidden = false;
+        ytBox.querySelector('[data-yt="load"]').focus({ preventScroll: true });
+        return;
+      }
+      playLocal(btn);
+    };
+    play.addEventListener("click", function () { start(chosen); });
+    if (ytBox) {
+      ytBox.querySelector('[data-yt="load"]').addEventListener("click", function () {
+        if (ytBox.querySelector(".yt__always input").checked) saveConsent(true);
+        embedYT();
+      });
+      ytBox.querySelector('[data-yt="local"]').addEventListener("click", function () { playLocal(chosen); });
+    }
+    // consent taken back: the embedded player goes at once
+    document.addEventListener("fih-consent", function () { if (frame && !ytOn()) { dropYT(); holder.classList.remove("is-playing"); } });
     tabBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
         if (btn === chosen) return;
@@ -270,10 +379,7 @@
         tabBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
         video.pause();
         video.poster = btn.dataset.poster;
-        load(btn);
-        holder.classList.add("is-playing");
-        video.controls = true;
-        var p = video.play(); if (p && p.catch) p.catch(function () {});
+        start(btn);
       });
     });
     video.addEventListener("ended", function () { holder.classList.remove("is-playing"); video.controls = false; });
