@@ -334,14 +334,15 @@
     if (!consent) openBox(false);
   }
 
-  /* ---- the trailer: three to pick. The tour is the one on YouTube: it is embedded only with
-     consent (saved, or given in the notice right in the player); without it the notice offers
-     to load it once, or to watch the site's own file ---- */
+  /* ---- the trailer: three to pick, each on YouTube (its id in the button's data-yt): it is
+     embedded only with consent (saved, or given in the notice right in the player); without it
+     the notice offers to load it once, or to watch the site's own file ---- */
   var holder = document.querySelector(".shot--video");
   if (holder) {
     var video = holder.querySelector("video");
     var play = holder.querySelector(".shot__play");
     var ytBox = holder.querySelector(".yt");
+    var ytLink = document.querySelector(".watch__yt a");
     var chosen = tabBtns[0];
     var frame = null;
     var load = function (btn) {
@@ -358,7 +359,7 @@
       video.pause();
       frame = document.createElement("iframe");
       frame.className = "shot__img shot__yt";
-      frame.src = data.yt + "?autoplay=1&rel=0&playsinline=1";
+      frame.src = data.yt + chosen.dataset.yt + "?autoplay=1&rel=0&playsinline=1";
       frame.title = video.getAttribute("aria-label") || "FIH";
       frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
       frame.referrerPolicy = "strict-origin-when-cross-origin";
@@ -400,6 +401,7 @@
         if (btn === chosen) return;
         chosen = btn;
         tabBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
+        if (ytLink && btn.dataset.yt) ytLink.href = data.ytw + btn.dataset.yt;
         video.pause();
         video.poster = btn.dataset.poster;
         start(btn);
