@@ -4,15 +4,15 @@
    page (main.js fades through the game's ten depth zones). Phones first: most visitors come
    on one. */
 
-@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=b85390c7cf") format("woff2"); font-weight: 300 700; font-display: swap; }
-@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=b85390c7cf") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Fredoka"; src: url("fonts/Fredoka.woff2?v=a7f29faad3") format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2?v=a7f29faad3") format("woff2"); font-weight: 100 900; font-display: swap; }
 /* the game's own fallbacks: Cyrillic (Nunito in titles, Inter in text), Japanese, Korean, Chinese
    (Noto Sans, cut down to the characters the page uses) */
-@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=b85390c7cf") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=b85390c7cf") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
-@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=b85390c7cf") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=b85390c7cf") format("woff2"); font-weight: 100 900; font-display: swap; }
-@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=b85390c7cf") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-cyr.woff2?v=a7f29faad3") format("woff2"); font-weight: 100 900; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Nunito"; src: url("fonts/Nunito-cyr.woff2?v=a7f29faad3") format("woff2"); font-weight: 200 1000; font-display: swap; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "Noto JP"; src: url("fonts/NotoJP.woff2?v=a7f29faad3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto KR"; src: url("fonts/NotoKR.woff2?v=a7f29faad3") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Noto SC"; src: url("fonts/NotoSC.woff2?v=a7f29faad3") format("woff2"); font-weight: 100 900; font-display: swap; }
 
 :root {
   --ink: #071a2b;
@@ -27,14 +27,14 @@
   --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --wide: 1180px;
-  --panel: #f3ecdd url("ui/linen.webp?v=b85390c7cf") 0 0 / 440px 320px;   /* the game's linen glass */
+  --panel: #f3ecdd url("ui/linen.webp?v=a7f29faad3") 0 0 / 440px 320px;   /* the game's linen glass */
 }
 /* the game's mouse cursors (owner, 2026-11-12): the painted arrow, and the pointing finger on
    everything that can be clicked; the same size and hot spots as in the game */
-:root { --cur-arrow: url("ui/cursors/arrow.png?v=b85390c7cf") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=b85390c7cf") 15 3, pointer; }
-@supports (cursor: image-set(url("a.png?v=b85390c7cf") 1x, url("b.png?v=b85390c7cf") 2x) 0 0, auto) {
-  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=b85390c7cf") 1x, url("ui/cursors/arrow@2x.png?v=b85390c7cf") 2x) 11 4, auto;
-          --cur-point: image-set(url("ui/cursors/point.png?v=b85390c7cf") 1x, url("ui/cursors/point@2x.png?v=b85390c7cf") 2x) 15 3, pointer; }
+:root { --cur-arrow: url("ui/cursors/arrow.png?v=a7f29faad3") 11 4, auto; --cur-point: url("ui/cursors/point.png?v=a7f29faad3") 15 3, pointer; }
+@supports (cursor: image-set(url("a.png?v=a7f29faad3") 1x, url("b.png?v=a7f29faad3") 2x) 0 0, auto) {
+  :root { --cur-arrow: image-set(url("ui/cursors/arrow.png?v=a7f29faad3") 1x, url("ui/cursors/arrow@2x.png?v=a7f29faad3") 2x) 11 4, auto;
+          --cur-point: image-set(url("ui/cursors/point.png?v=a7f29faad3") 1x, url("ui/cursors/point@2x.png?v=a7f29faad3") 2x) 15 3, pointer; }
 }
 html { cursor: var(--cur-arrow); }
 a, button, summary, [role="button"] { cursor: var(--cur-point); }
@@ -97,12 +97,12 @@ p { margin: 0 0 1em; }
 /* where two pieces lie over each other one fades out as the other fades in, and the two are
    added up (plus-lighter): wood, shadow and linen stay exactly as strong as in one piece */
 .wood i + i { mix-blend-mode: plus-lighter; }
-.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=b85390c7cf"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
+.wood--bar i { top: 0; bottom: 0; background-image: url("ui/wood_bar.webp?v=a7f29faad3"); background-size: calc(1396px * var(--wk, 1)) calc(168px * var(--wk, 1)); }
 .wood--bar i:nth-child(1) { right: 0; left: calc(50% - 30px); background-position: right top;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 60px); mask-image: linear-gradient(90deg, transparent, #000 60px); }
 .wood--bar i:nth-child(2) { left: 0; right: calc(50% - 30px); background-position: left top;
   -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 60px), transparent); }
-.wood--panel i { background-image: url("ui/wood_panel.webp?v=b85390c7cf"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
+.wood--panel i { background-image: url("ui/wood_panel.webp?v=a7f29faad3"); background-size: calc(996px * var(--wk, 1)) calc(536px * var(--wk, 1)); }
 .wood--panel i:nth-child(1) { right: 0; bottom: 0; left: calc(50% - 40px); top: calc(50% - 40px); background-position: right bottom;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px);
   mask-image: linear-gradient(90deg, transparent, #000 80px), linear-gradient(180deg, transparent, #000 80px); }
@@ -192,6 +192,13 @@ body.scrolled::before { opacity: .92; }
 .jelly--blue { --outline: #0b4f9a; }
 .jelly--gold { --outline: #8a4a00; }
 .jelly--gold .jelly__plate { filter: hue-rotate(-155deg) saturate(1.3) brightness(1.03); }
+/* the quiet one beside a blue one (Settings, Watch without YouTube): the same glass, pearl inside */
+.jelly--pearl { color: #0b4f9a; }
+.jelly--pearl .jelly__label { -webkit-text-stroke: 0; }
+.jelly--pearl .jelly__plate::before { border-color: #cfe7ec;
+  background: radial-gradient(ellipse 60% 60% at 30% 0%, #ffffff 0%, transparent 80%), linear-gradient(to bottom, #ffffff 0%, #f5fbfd 45%, #e2f2f7 100%);
+  box-shadow: inset 0 5px 8px #ffffff, inset 0 -5px 8px #cfe5ec, 0 0 0 1px #e8f7fa, 0 1px 2px #95cad43b; }
+.jelly--pearl .jelly__plate::after { background: linear-gradient(180deg, #ffffff66 0%, transparent 40%); box-shadow: none; }
 a.jelly:hover, button.jelly:hover { transform: translateY(-3px); }
 a.jelly:active, button.jelly:active { transform: translateY(3px) scale(.985); }
 a.jelly:active .jelly__plate, button.jelly:active .jelly__plate { box-shadow: 0 1px 0 #add4dd, 0 4px 7px #4d8b9828, inset 3px 4px 3px #fff, inset -4px -5px 6px #c9dfe6; }
@@ -361,10 +368,13 @@ span.jelly { cursor: var(--cur-arrow); }
   font: 500 clamp(1.05rem, 1.7vw, 1.28rem)/1.35 var(--display); color: #11293b; max-width: 34em;
   filter: drop-shadow(0 5px 0 rgba(8,41,102,.10)) drop-shadow(0 14px 18px rgba(8,41,102,.24)); }
 .host--right .host__bubble { margin: 0 var(--ml) calc(var(--fw) * 0.406 + var(--gap)) 0; }
-/* the tail: from the bubble's lower edge down to his mouth */
+/* the tail: from the bubble's lower edge towards his mouth, a little over half the way (owner,
+   2026-11-21: shorter; the box still reaches to the mouth, the point lies on the line to it) */
 .host__bubble::before { content: ""; position: absolute; top: calc(100% - 1px); height: calc(var(--gap) - 2px); background: rgba(255,255,255,.98);
-  left: calc(12px - var(--ml) - var(--fw) * 0.08); width: calc(var(--ml) + var(--fw) * 0.08 + 30px); clip-path: polygon(calc(100% - 32px) 0, calc(100% - 4px) 0, 0 100%); }
-.host--right .host__bubble::before { left: auto; right: calc(12px - var(--ml) - var(--fw) * 0.08); clip-path: polygon(32px 0, 4px 0, 100% 100%); }
+  left: calc(12px - var(--ml) - var(--fw) * 0.08); width: calc(var(--ml) + var(--fw) * 0.08 + 30px);
+  clip-path: polygon(calc(100% - 30px) 0, calc(100% - 6px) 0, calc((100% - 18px) * .45) 55%); }
+.host--right .host__bubble::before { left: auto; right: calc(12px - var(--ml) - var(--fw) * 0.08);
+  clip-path: polygon(30px 0, 6px 0, calc(18px + (100% - 18px) * .55) 55%); }
 .host__rest { visibility: hidden; }
 /* the bubble opens when he begins to talk (main.js: .talk; with reduced motion or without
    JavaScript it is simply there) */
@@ -445,22 +455,21 @@ span.jelly { cursor: var(--cur-arrow); }
 .more__card h3 { font-size: 1.3rem; font-weight: 600; margin: 16px 20px 6px; text-wrap: balance; }
 .more__card p { margin: 0 20px; font-size: 1rem; }
 
-/* ---------- plain buttons of the privacy settings and the video notice: the two choices of the
-   privacy settings look and weigh exactly the same ---------- */
-.cbtn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 20px; border-radius: 999px; cursor: var(--cur-point);
-  font: 600 1.02rem/1.15 var(--display); color: #fff; text-align: center; background: linear-gradient(180deg, #7fe5ef, #17b9ec); border: 2px solid #def8fe;
-  box-shadow: 0 3px 0 #0b8fc4, 0 6px 12px rgba(7,26,43,.18); -webkit-text-stroke: 4px #0b4f9a; paint-order: stroke fill; transition: transform .15s; }
-.cbtn:hover { transform: translateY(-1px); }
-.cbtn:active { transform: translateY(1px); }
-.cbtn--plain { color: var(--ink); background: #fff; border-color: #cfe7ec; box-shadow: 0 3px 0 #b9d8df; -webkit-text-stroke: 0; }
-.cbtn:disabled { opacity: .6; cursor: var(--cur-arrow); }
+/* ---------- the buttons of the privacy settings and the video notice: the owner's jelly buttons,
+   smaller (owner, 2026-11-21); "Only necessary" and "Allow all" look and weigh exactly the same ---------- */
+.consent__btns .jelly, .yt__btns .jelly { zoom: .45; min-width: 0; padding: 0 56px; }
+/* the two choices in two columns of one width: as wide as the longer one needs, or wider */
+.consent__pair { flex: 1 1 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.consent__btns .jelly[hidden], .yt__btns .jelly[hidden] { display: none; }
 
 /* ---------- the privacy settings: a panel of the game in its wooden frame, at the bottom ---------- */
 .consent { --wk: 1; position: fixed; z-index: 40; left: 0; right: 0; bottom: 22px; margin: 0 auto; width: min(640px, calc(100% - 48px)); }   /* (no translate: half pixels showed a seam in the frame) */
-.consent__panel { position: relative; padding: 22px 26px 18px; }
+.consent__panel { position: relative; padding: 22px 26px 18px; border-radius: 22px; background: #efe7d6; }   /* (solid: nothing of the page shows through it) */
 .consent__panel > :not(.wood) { position: relative; z-index: 1; }
 /* (on a small screen the open settings scroll inside the frame) */
-.consent__body { max-height: calc(100vh - 90px); max-height: calc(100svh - 90px); overflow-y: auto; overscroll-behavior: contain; }
+.consent__body { max-height: calc(100vh - 90px); max-height: calc(100svh - 90px); overflow-y: auto; overscroll-behavior: contain;
+  padding: 10px; margin: -10px; }   /* (room for the buttons' shadows and the keyboard's ring) */
+.consent:focus { outline: none; }
 .consent__title { font-size: 1.35rem; font-weight: 700; margin-bottom: 8px; }
 .consent__text { font-size: .95rem; line-height: 1.5; margin: 0 0 14px; }
 .consent__opts { display: grid; gap: 8px; margin: 0 0 14px; }
@@ -468,8 +477,7 @@ span.jelly { cursor: var(--cur-arrow); }
 .consent__opt input { width: 22px; height: 22px; margin-top: 1px; flex: none; accent-color: #17b9ec; }
 .consent__opt b { font-family: var(--display); font-weight: 600; }
 .consent__opt em { font-style: normal; font-size: .82rem; color: var(--ink-soft); margin-left: 6px; }
-.consent__btns { display: flex; flex-wrap: wrap; gap: 10px; }
-.consent__btns .cbtn:not(.cbtn--plain) { flex: 1 1 180px; }
+.consent__btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 12px; }
 .consent__links { display: flex; gap: 18px; margin: 12px 0 0; font-size: .86rem; }
 .consent__links a { color: var(--ink-soft); }
 
@@ -623,8 +631,9 @@ html:lang(ja) .doc :is(h1, h2, h3, th), html:lang(ko) .doc :is(h1, h2, h3, th), 
   .consent { --wk: .8; bottom: 12px; width: calc(100% - 36px); }
   .consent__panel { padding: 18px 18px 14px; }
   .consent__text { font-size: .9rem; margin-bottom: 12px; }
-  .consent__btns .cbtn { flex: 1 1 calc(50% - 5px); min-height: 42px; padding: 8px 12px; font-size: .95rem; }
-  .consent__btns .cbtn--plain { flex-basis: 100%; }
+  .consent__btns .jelly, .yt__btns .jelly { zoom: .4; padding: 0 30px; }
+  .consent__btns { flex-direction: column; align-items: stretch; gap: 8px; }   /* (one under the other: in most languages two do not fit side by side) */
+  .consent__pair { grid-template-columns: 1fr; gap: 8px; }
   .consent__opt { font-size: .86rem; padding: 8px 10px; }
   .consent__title { font-size: 1.2rem; }
   .yt__box { padding: 14px; }

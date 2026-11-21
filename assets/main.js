@@ -300,7 +300,9 @@
       cbtn("save").hidden = !details;
       cbtn("settings").hidden = !!details;
       cyt.checked = ytOn();
-      (details ? cyt : cbtn("necessary")).focus({ preventScroll: true });
+      // (the box itself takes the focus, so Tab goes on to its buttons; a ring round the first
+      // button before anyone used the keyboard looked like a fault)
+      (details ? cyt : cbox).focus({ preventScroll: true });
     };
     var closeBox = function () { cbox.hidden = true; };
     cbtn("necessary").addEventListener("click", function () { saveConsent(false); closeBox(); });

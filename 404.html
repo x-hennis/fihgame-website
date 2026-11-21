@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="FIH">
 <meta property="og:title" content="Page not found, FIH">
 <meta property="og:description" content="Page not found">
-<meta property="og:image" content="https://fihgame.com/assets/og.jpg?v=b85390c7cf">
+<meta property="og:image" content="https://fihgame.com/assets/og.jpg?v=a7f29faad3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="FIH: A Little Ocean of Friends">
@@ -25,16 +25,16 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/Fredoka.woff2?v=b85390c7cf" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/Inter.woff2?v=b85390c7cf" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css?v=b85390c7cf">
+<link rel="preload" href="/assets/fonts/Fredoka.woff2?v=a7f29faad3" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Inter.woff2?v=a7f29faad3" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css?v=a7f29faad3">
 </head>
 <body class="legal">
 <a class="skip" href="#main">Skip to the content</a>
-<div class="sea" aria-hidden="true"><div class="sea__zone" style="background-image:url(/assets/zones/01_bg.webp?v=b85390c7cf)"></div><div class="sea__shade"></div><div class="sea__rays"></div><div class="sea__specks"></div><div class="sea__bubbles"></div></div>
+<div class="sea" aria-hidden="true"><div class="sea__zone" style="background-image:url(/assets/zones/01_bg.webp?v=a7f29faad3)"></div><div class="sea__shade"></div><div class="sea__rays"></div><div class="sea__specks"></div><div class="sea__bubbles"></div></div>
 <header class="bar">
   <div class="wood wood--bar" aria-hidden="true"><i></i><i></i></div>
-  <a class="bar__logo" href="/" aria-label="FIH"><img src="/assets/ui/logo_nav.webp?v=b85390c7cf" alt="FIH" width="520" height="260"></a>
+  <a class="bar__logo" href="/" aria-label="FIH"><img src="/assets/ui/logo_nav.webp?v=a7f29faad3" alt="FIH" width="520" height="260"></a>
   <nav class="bar__nav" aria-label="Page"><a href="#trailer">Trailer</a><a href="#dig">The game</a><a href="#meet">Fish</a><a href="#fair">Fair play</a></nav>
   <button class="music" type="button" aria-pressed="false" aria-label="Music" title="Music"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 17.5V5.2l10-2.2v12.3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6.4" cy="17.6" rx="3" ry="2.5" fill="currentColor"/><ellipse cx="16.4" cy="15.4" rx="3" ry="2.5" fill="currentColor"/></svg></button>
   <details class="lang">
@@ -49,14 +49,14 @@
   <div class="foot__panel">
     <div class="wood wood--panel" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <p class="foot__line">A game by</p>
-    <img class="foot__nm" src="/assets/ui/nm_logo.webp?v=b85390c7cf" alt="NM" width="240" height="152" loading="lazy">
+    <img class="foot__nm" src="/assets/ui/nm_logo.webp?v=a7f29faad3" alt="NM" width="240" height="152" loading="lazy">
     <nav class="foot__links" aria-label="Legal"><a href="/imprint/">Imprint</a><a href="/privacy/">Privacy</a><a href="mailto:info@niklasmenten.de">info@niklasmenten.de</a><button class="foot__consent" type="button" data-consent-open>Privacy settings</button></nav>
     <p class="foot__small">© 2026 FIH. Steam is a trademark of Valve Corporation.</p>
   </div>
 </footer>
 <div class="gauge" aria-hidden="true"><span class="gauge__label">Depth</span> <b class="gauge__num">0</b> <span class="gauge__zone"></span></div>
 
-<section class="consent" id="consent" role="dialog" aria-labelledby="consent-title" hidden>
+<section class="consent" id="consent" role="dialog" aria-labelledby="consent-title" tabindex="-1" hidden>
   <div class="consent__panel">
     <div class="wood wood--panel" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="consent__body">
@@ -67,16 +67,15 @@
       <label class="consent__opt"><input type="checkbox" name="yt"><span><b>External media: YouTube</b><br>Plays our trailer from YouTube (Google Ireland Limited). Data can go to the USA.</span></label>
     </div>
     <div class="consent__btns">
-      <button type="button" class="cbtn" data-c="necessary">Only necessary</button>
-      <button type="button" class="cbtn" data-c="all">Allow all</button>
-      <button type="button" class="cbtn cbtn--plain" data-c="settings">Settings</button>
-      <button type="button" class="cbtn" data-c="save" hidden>Save my choice</button>
+      <div class="consent__pair"><button type="button" class="jelly jelly--blue" data-c="necessary"><span class="jelly__plate"><i></i><i></i><i></i></span><span class="jelly__label">Only necessary</span></button><button type="button" class="jelly jelly--blue" data-c="all"><span class="jelly__plate"><i></i><i></i><i></i></span><span class="jelly__label">Allow all</span></button></div>
+      <button type="button" class="jelly jelly--pearl" data-c="settings"><span class="jelly__plate"><i></i><i></i><i></i></span><span class="jelly__label">Settings</span></button>
+      <button type="button" class="jelly jelly--blue" data-c="save" hidden><span class="jelly__plate"><i></i><i></i><i></i></span><span class="jelly__label">Save my choice</span></button>
     </div>
     <p class="consent__links"><a href="/privacy/">Privacy policy</a><a href="/imprint/">Imprint</a></p>
     </div>
   </div>
 </section>
-<script type="application/json" id="fih-data">{"zones": [{"name": "Sunlit Shallows", "water": "#2ba3c0"}, {"name": "Kelp Forest", "water": "#1c8f79"}, {"name": "Sunset Slopes", "water": "#b06337"}, {"name": "Crimson Reef", "water": "#983b4f"}, {"name": "Amethyst Grotto", "water": "#3b2897"}, {"name": "Golden Ruins", "water": "#a67f39"}, {"name": "Frost Garden", "water": "#217da9"}, {"name": "Twilight Reef", "water": "#1b6a95"}, {"name": "Midnight Zone", "water": "#0e2752"}, {"name": "The Abyss", "water": "#070f2a"}], "bubble": "/assets/ui/bubble.webp?v=b85390c7cf", "music": ["/assets/audio/reef.ogg?v=b85390c7cf", "/assets/audio/reef.m4a?v=b85390c7cf"], "hero": "/assets/video/hero_", "v": "b85390c7cf", "close": "Close", "prev": "Previous picture", "next": "Next picture", "yt": "https://www.youtube-nocookie.com/embed/cWMwjLK6kR4"}</script>
-<script src="/assets/main.js?v=b85390c7cf" defer></script>
+<script type="application/json" id="fih-data">{"zones": [{"name": "Sunlit Shallows", "water": "#2ba3c0"}, {"name": "Kelp Forest", "water": "#1c8f79"}, {"name": "Sunset Slopes", "water": "#b06337"}, {"name": "Crimson Reef", "water": "#983b4f"}, {"name": "Amethyst Grotto", "water": "#3b2897"}, {"name": "Golden Ruins", "water": "#a67f39"}, {"name": "Frost Garden", "water": "#217da9"}, {"name": "Twilight Reef", "water": "#1b6a95"}, {"name": "Midnight Zone", "water": "#0e2752"}, {"name": "The Abyss", "water": "#070f2a"}], "bubble": "/assets/ui/bubble.webp?v=a7f29faad3", "music": ["/assets/audio/reef.ogg?v=a7f29faad3", "/assets/audio/reef.m4a?v=a7f29faad3"], "hero": "/assets/video/hero_", "v": "a7f29faad3", "close": "Close", "prev": "Previous picture", "next": "Next picture", "yt": "https://www.youtube-nocookie.com/embed/cWMwjLK6kR4"}</script>
+<script src="/assets/main.js?v=a7f29faad3" defer></script>
 </body>
 </html>
